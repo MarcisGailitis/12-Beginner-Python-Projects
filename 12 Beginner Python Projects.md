@@ -23,13 +23,21 @@ yt link: <https://www.youtube.com/watch?v=8ext9G7xspg>
 
 Link to madlibs.py
 
-## 2. Guess the Number (computer)
+## 2. Guess the Number (user)
+
+Computer creates the nr, person guesses
+
+Link to guess_user.py
+
+## 3. Guess the Number (computer)
+
+User creates the nr, computer guesses
 
 Link to guess_computer.py
 
-## 3. Guess the Number (user)
-
 ## 4. Rock Paper Scissors
+
+Link to ro_pa_sc.py
 
 ## 5. Hangman
 
