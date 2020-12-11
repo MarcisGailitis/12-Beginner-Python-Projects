@@ -37,7 +37,7 @@ Link to guess_computer.py
 
 ## 4. Rock Paper Scissors
 
-Link to ro_pa_sc.py
+Link rock_paper_scissors.py
 
 ## 5. Hangman
 
