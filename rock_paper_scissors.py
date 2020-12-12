@@ -25,4 +25,4 @@ while True:
             f'You entered {abbrs[user]}, computer entered {abbrs[comp]}. You win')
     elif outcome == '2':
         print(
-            f'You entered {abbrs[user]}, computer entered {abbrs[comp]}. Computer win')
+            f'You entered {abbrs[user]}, computer entered {abbrs[comp]}. Computer wins')
