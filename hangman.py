@@ -5,19 +5,19 @@ while guess_word:
 
     counter = 0
     word_out = []
-    guessed_letters = set()
+    guessed_letters = list()
     word = input('Enter the word for hangman game: ')
     letter_list = set(word)
 
-    print(f'\nGuess the following word: {"* " * len(word)}')
+    print(f'\nCurrent word: {"* " * len(word)}')
 
     while guess_letter:
 
         print(
-            f'You have used following letters: {", ".join(guessed_letters)}')
+            f'\nYou have used following letters: {", ".join(guessed_letters)}')
         counter += 1
         input_letter = input(
-            f'\nTry Nr {counter}. Enter a letter or quit to exit: ')
+            f'Try Nr {counter}. Enter a letter or quit to exit: ')
 
         if input_letter == 'quit':
             break
@@ -25,7 +25,7 @@ while guess_word:
         if input_letter in guessed_letters:
             print('You already guessed that letter')
         else:
-            guessed_letters.add(input_letter)
+            guessed_letters.append(input_letter)
 
         for letter in word:
             if letter in guessed_letters:
@@ -33,7 +33,7 @@ while guess_word:
             else:
                 word_out.append('*')
 
-        print(f'Guess the following word: {" ".join(word_out)}')
+        print(f'\nCurrent word: {" ".join(word_out)}')
 
         if letter_list == set(word_out):
             print('Success!')
