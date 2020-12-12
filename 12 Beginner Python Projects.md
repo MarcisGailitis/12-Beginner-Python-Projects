@@ -37,9 +37,11 @@ Link to guess_computer.py
 
 ## 4. Rock Paper Scissors
 
-Link rock_paper_scissors.py
+Link to rock_paper_scissors.py
 
 ## 5. Hangman
+
+Link to hangman.py
 
 ## 6. Tic-Tac-Toe
 
