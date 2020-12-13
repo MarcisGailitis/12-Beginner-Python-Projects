@@ -45,6 +45,10 @@ Link to hangman.py
 
 ## 6. Tic-Tac-Toe
 
+Link to ttt_game.py
+
+Link to ttt_player.py
+
 ## 7. Tic-Tac-Toe AI
 
 ## 8. Binary Search
