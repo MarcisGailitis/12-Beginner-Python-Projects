@@ -87,7 +87,6 @@ def play(game, x_player, o_player, print_game=True):
 
     # iterate while the game still has empty squares
     # (we do nto have to worry about the winner, as we will return which breaks the loop)
-
     while game.empty_squares():
         if letter == 'O':
             square = o_player.get_move(game)
@@ -113,10 +112,8 @@ def play(game, x_player, o_player, print_game=True):
             # else:
             #     letter = 'X'
 
-            # BUT WHAT IF WE WON
-
         # tiny break
-        time.sleep(1)
+        time.sleep(0.5)
 
     if print_game:
         print('It is a Tie')
