@@ -29,7 +29,7 @@ class HumanPlayer(Player):
         valid_square = False
         val = None
         while not valid_square:
-            square = input(self.letter + '\s turn. Input move (0-8):')
+            square = input(f'{self.letter}\'s turn. Input move (0-8): ')
             # we are going to check that this is a correct value by trying to cast
             # it to an intiger and if it is not, then we say it is invalid
             # if that spot is not available on the board, then it is also not valid
