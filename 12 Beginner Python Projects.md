@@ -75,6 +75,8 @@ minimize O chances of win
 
 ## 8. Binary Search
 
+Link to binary.py
+
 ## 9. Minesweeper
 
 ## 10. Sudoku Solver
