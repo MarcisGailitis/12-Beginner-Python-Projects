@@ -1,4 +1,4 @@
-from ttt_player import HumanPlayer, RandomComputerPlayer
+from ttt_player import HumanPlayer, RandomComputerPlayer, GeniusComputerPlayer
 import time
 
 
@@ -113,14 +113,30 @@ def play(game, x_player, o_player, print_game=True):
             #     letter = 'X'
 
         # tiny break
-        time.sleep(0.5)
+        if print_game:
+            time.sleep(0.5)
 
     if print_game:
         print('It is a Tie')
 
 
 if __name__ == '__main__':
-    x_player = HumanPlayer('X')
-    o_player = RandomComputerPlayer('O')
-    game = TicTacToe()
-    play(game, x_player, o_player, print_game=True)
+    x_wins = 0
+    o_wins = 0
+    ties = 0
+    nr_of_games = 0
+    for i in range(50):
+        x_player = GeniusComputerPlayer('X')
+        o_player = GeniusComputerPlayer('O')
+        game = TicTacToe()
+        result = play(game, x_player, o_player, print_game=False)
+        nr_of_games += 1
+        print(nr_of_games)
+        if result == 'X':
+            x_wins += 1
+        elif result == 'O':
+            o_wins += 1
+        else:
+            ties += 1
+    print(
+        f'After 1000 games there were {x_wins} X wins , {o_wins} O wins, and {ties} ties')
